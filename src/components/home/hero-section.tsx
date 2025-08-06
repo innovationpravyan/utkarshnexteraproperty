@@ -1,51 +1,73 @@
 "use client";
 
+import React, { useEffect, useState } from 'react';
 import Image from "next/image";
-import {Button} from "@/components/ui/button";
-import {ArrowRight, Award, Building, DollarSign, Home as HomeIcon, Sparkles} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Building, Home, DollarSign, ArrowRight, Award, Sparkles, Star, Zap, Layers, Hexagon } from "lucide-react";
 import Link from "next/link";
 
 export default function HeroSection() {
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleMouseMove = (e: { clientX: any; clientY: any; }) => {
+            setMousePosition({ x: e.clientX, y: e.clientY });
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
     return (
-        <section
-            className="relative min-h-screen flex justify-center overflow-hidden bg-gradient-to-br from-[#1a365d] via-[#343a40] to-black">
-            <div
-                className="absolute inset-0 bg-gradient-to-tr from-orange-500/15 via-transparent to-amber-400/10"></div>
-
-            <div className="hidden md:block absolute inset-0 overflow-hidden">
-                <div
-                    className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-orange-500/20 to-amber-400/15 rounded-full blur-3xl animate-pulse"></div>
-                <div
-                    className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-orange-500/15 to-orange-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-                <div
-                    className="hidden md:block absolute top-1/4 left-1/4 w-3 h-3 bg-amber-400 rounded-full animate-ping delay-500 opacity-60"></div>
-                <div
-                    className="hidden md:block absolute top-3/4 right-1/4 w-2 h-2 bg-emerald-500 rounded-full animate-bounce delay-700 opacity-80"></div>
-                <div
-                    className="absolute top-1/2 left-3/4 w-1 h-1 bg-orange-500 rounded-full animate-pulse delay-300 opacity-70"></div>
+        <section className="relative min-h-screen flex justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-black">
+            {/* Dynamic Background Layers */}
+            <div className="absolute inset-0">
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-900/20 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-[conic-gradient(from_90deg_at_50%_50%,_transparent_0deg,_orange-500/10_120deg,_amber-400/10_180deg,_transparent_360deg)] animate-spin duration-[20s]"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/5 to-transparent animate-pulse duration-4000"></div>
             </div>
 
-            <div className="hidden md:block absolute inset-0 pointer-events-none">
+            {/* Animated Mesh Background */}
+            <div className="absolute inset-0 opacity-30">
                 <div
-                    className="hidden md:block absolute top-40 left-20 w-12 h-12 border-2 border-amber-400/40 rotate-45 animate-spin duration-[8000ms] opacity-60"></div>
-                <div
-                    className="absolute top-40 right-20 w-8 h-8 bg-gradient-to-br from-orange-500/25 to-orange-400/20 rounded-full animate-bounce duration-3000 opacity-70"></div>
-                <div
-                    className="hidden md:block absolute bottom-40 left-20 w-6 h-6 bg-emerald-500/25 transform rotate-12 animate-pulse duration-2000 opacity-50"></div>
-                <div
-                    className="absolute bottom-20 right-10 w-14 h-14 border border-orange-500/30 rounded-full animate-ping duration-4000 opacity-40"></div>
+                    className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-amber-400/10 transform transition-transform duration-1000"
+                    style={{
+                        transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px) rotate(${mousePosition.x * 0.01}deg)`
+                    }}
+                ></div>
             </div>
+
+            {/* Geometric Shapes */}
+            {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute bottom-32 left-20 w-16 h-16">
+                    <Hexagon className="w-full h-full text-orange-400/30 animate-pulse duration-3000" />
+                </div>
+            </div> */}
+
+            {/* Glowing Orbs */}
+            {/* <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-orange-500/30 via-amber-400/20 to-transparent rounded-full blur-3xl animate-pulse duration-4000 hover:scale-110 transition-all duration-2000"></div>
+                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-orange-600/25 via-red-500/15 to-transparent rounded-full blur-3xl animate-pulse delay-2000 duration-6000"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-orange-500/5 to-transparent rounded-full animate-spin duration-[30s]"></div>
+            </div> */}
 
             <div className="relative z-10 container mx-auto px-4 lg:py-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-8 text-center lg:text-left">
-                        <div
-                            className="hidden lg:inline-flex items-center gap-3 bg-gradient-to-r from-[#1a365d]/80 to-[#343a40]/60 backdrop-blur-xl border border-amber-400/40 rounded-full px-4 md:px-8 py-3 md:py-4 text-sm font-semibold text-[#f8f9fa] shadow-2xl animate-fade-in hover:scale-105 transition-all duration-500">
-                            <Award className="w-5 h-5 text-amber-400 animate-pulse"/>
-                            LUXURY CONSTRUCTION SPECIALISTS
-                            <Sparkles className="w-5 h-5 text-orange-500 animate-spin duration-3000"/>
+                        {/* Premium Badge */}
+                        <div className="group hidden lg:inline-flex items-center gap-3 bg-gradient-to-r from-slate-900/80 via-blue-950/70 to-slate-900/80 backdrop-blur-2xl border-2 border-orange-400/50 rounded-full px-6 md:px-10 py-4 md:py-5 text-sm font-bold text-white shadow-2xl hover:shadow-orange-500/30 transition-all duration-700 hover:scale-105 hover:border-orange-400/80">
+                            <div className="relative">
+                                <Award className="w-6 h-6 text-orange-400 animate-pulse" />
+                                <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-ping"></div>
+                            </div>
+                            <span className="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent font-black tracking-wider">
+                                LUXURY CONSTRUCTION SPECIALISTS
+                            </span>
+                            <Sparkles className="w-6 h-6 text-amber-400 animate-spin duration-3000" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-amber-400/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
 
+                        {/* Hero Title */}
                         <div className="space-y-4">
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight font-[Poppins,sans-serif]">
                                 <span
@@ -66,116 +88,113 @@ export default function HeroSection() {
                             </p>
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        {/* Action Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
                             <Button
                                 size="lg"
-                                className="group relative z-30 bg-gradient-to-r from-orange-500 to-amber-500
-                                            hover:from-orange-600 hover:to-amber-600 text-white
-                                            shadow-[0_0_15px_rgba(255,107,53,0.4)] ring-1 ring-amber-400/50
-                                            transition-all duration-500 transform hover:scale-105 hover:-translate-y-1
-                                            px-6 md:px-8 py-5 md:py-6 text-base md:text-lg font-bold rounded-xl font-[Poppins,sans-serif]"
+                                className="group relative overflow-hidden bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500
+                                            hover:from-orange-700 hover:via-orange-600 hover:to-amber-600 text-white font-black
+                                            ring-2 ring-orange-400/50 hover:ring-orange-400/80
+                                            transition-all duration-700 transform hover:scale-105 hover:-translate-y-2
+                                            px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl rounded-2xl"
                                 asChild
                             >
-                                <Link
-                                    href="https://wa.me/919214143300"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <Building
-                                        className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300"/>
+                                <Link href="https://wa.me/919214143300" target="_blank" rel="noopener noreferrer">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent animate-shine"></div>
+                                    <Building className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-500" />
                                     START BUILDING
-                                    <ArrowRight
-                                        className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300"/>
+                                    <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-3 transition-transform duration-500" />
+                                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-400/20 to-amber-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </Link>
                             </Button>
 
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="group bg-[#1a365d]/20 backdrop-blur-xl hover:bg-[#1a365d]/40 border-2 border-amber-400/50 hover:border-amber-400 text-[#f8f9fa] hover:text-amber-400 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 px-6 md:px-8 py-5 md:py-6 text-base md:text-lg font-bold rounded-xl font-[Poppins,sans-serif]"
+                                className="group relative overflow-hidden bg-slate-900/30 backdrop-blur-2xl hover:bg-slate-900/60
+                                            border-2 border-orange-400/60 hover:border-orange-300 text-white hover:text-orange-300
+                                            shadow-2xl hover:shadow-none-500/30 transition-all duration-700 hover:scale-105 hover:-translate-y-2
+                                            px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl font-bold rounded-2xl"
                                 asChild
                             >
                                 <Link href="/projects">
-                                    <HomeIcon
-                                        className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300"/>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400/10 to-amber-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <Home className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-500" />
                                     VIEW PROJECTS
-                                    <ArrowRight
-                                        className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300"/>
+                                    <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-3 transition-transform duration-500" />
                                 </Link>
                             </Button>
                         </div>
 
-                        <div className="pt-4">
+                        {/* Additional CTA */}
+                        {/* <div className="pt-6">
                             <Button
                                 variant="ghost"
-                                className="group text-amber-400 hover:text-orange-400 hover:bg-orange-500/10 transition-all duration-300 hover:scale-105 font-[Inter,sans-serif]"
+                                className="group relative text-orange-400 hover:text-amber-300 hover:bg-orange-500/20
+                                            transition-all duration-500 hover:scale-105 backdrop-blur-sm border border-orange-400/30
+                                            hover:border-orange-400/60 rounded-xl px-6 py-4"
                                 asChild
                             >
                                 <Link href="/sell-property">
-                                    <DollarSign className="mr-2 h-4 w-4 group-hover:animate-spin"/>
-                                    Professional Property Valuation
-                                    <ArrowRight
-                                        className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform duration-300"/>
+                                    <DollarSign className="mr-2 h-5 w-5 group-hover:animate-spin" />
+                                    <span className="font-semibold">Professional Property Valuation</span>
+                                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400/5 to-amber-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                 </Link>
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
 
-                    <div className="hidden lg:block relative mt-12 lg:mt-0">
-                        <div
-                            className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-orange-500/25 to-amber-400/20 rounded-3xl rotate-12 blur-sm animate-pulse duration-3000"></div>
-                        <div
-                            className="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-tl from-orange-400/20 to-emerald-500/15 rounded-3xl -rotate-12 blur-sm animate-pulse duration-4000 delay-1000"></div>
+                    {/* Enhanced Image Section */}
+                    <div className="hidden lg:block relative mt-12 lg:mt-0 group">
+                        {/* Background Effects */}
+                        <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-orange-500/30 to-amber-400/20 rounded-3xl rotate-12 blur-2xl animate-pulse duration-3000 group-hover:rotate-45 transition-all duration-2000"></div>
+                        <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-gradient-to-tl from-orange-400/25 to-emerald-500/15 rounded-3xl -rotate-12 blur-2xl animate-pulse duration-4000 delay-1000 group-hover:-rotate-45 transition-all duration-2000"></div>
 
-                        <div className="relative aspect-[4/3] w-full max-w-2xl mx-auto group">
-                            <div
-                                className="absolute inset-0 bg-gradient-to-tr from-orange-500/30 via-amber-400/25 to-orange-400/20 rounded-3xl transform rotate-1 animate-pulse duration-2000"></div>
-                            <div
-                                className="absolute inset-0 bg-gradient-to-bl from-[#1a365d]/40 to-emerald-500/20 rounded-3xl transform -rotate-1 animate-pulse duration-3000 delay-500"></div>
+                        {/* Main Image Container */}
+                        <div className="relative aspect-[4/3] w-full max-w-2xl mx-auto">
+                            {/* Layered Background Elements */}
+                            <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/40 via-amber-400/30 to-orange-400/20 rounded-3xl transform rotate-2 animate-pulse duration-2000 group-hover:rotate-6 transition-all duration-1000"></div>
+                            <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/50 to-emerald-500/20 rounded-3xl transform -rotate-2 animate-pulse duration-3000 delay-500 group-hover:-rotate-6 transition-all duration-1000"></div>
 
-                            <div
-                                className="relative bg-gradient-to-br from-[#1a365d] to-[#343a40] p-2 md:p-4 rounded-3xl shadow-2xl transform -rotate-1 hover:rotate-0 transition-all duration-700 group-hover:shadow-orange-500/25 border border-amber-400/30">
+                            {/* Image Frame */}
+                            <div className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800 p-3 md:p-6 rounded-3xl transform -rotate-1 hover:rotate-0 transition-all duration-1000 border-2 border-orange-400/40 hover:border-orange-400/70 backdrop-blur-xl">
                                 <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
                                     <Image
                                         src="/hero_bg/_hero_bg_image.png"
                                         alt="Modern construction project with premium architecture"
                                         fill
-                                        className="object-cover transition-all duration-1000 group-hover:scale-110 filter group-hover:brightness-110"
+                                        className="object-cover transition-all duration-1500 group-hover:scale-115 filter group-hover:brightness-110 group-hover:contrast-110"
                                         data-ai-hint="luxury modern house exterior"
                                         priority
                                     />
-                                    <div
-                                        className="absolute inset-0 bg-gradient-to-t from-[#1a365d]/50 via-transparent to-transparent group-hover:from-[#1a365d]/30 transition-all duration-500"></div>
-                                    <div
-                                        className="absolute inset-0 bg-gradient-to-br from-transparent to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-                                    <div
-                                        className="absolute top-6 right-6 w-3 h-3 bg-amber-400 rounded-full animate-ping opacity-75"></div>
-                                    <div
-                                        className="hidden md:block absolute top-12 right-12 w-2 h-2 bg-emerald-500 rounded-full animate-pulse delay-500 opacity-60"></div>
-                                    <div
-                                        className="absolute bottom-8 left-8 w-2 h-2 bg-orange-400 rounded-full animate-ping delay-1000 opacity-80"></div>
+                                    {/* Image Overlays */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent group-hover:from-slate-900/40 transition-all duration-700"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-br from-transparent to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+
+                                    {/* Floating Indicators */}
+                                    {/* <div className="absolute top-6 right-6 w-4 h-4 bg-orange-400 rounded-full animate-ping opacity-80 group-hover:animate-bounce"></div>
+                                    <div className="absolute top-12 right-12 w-3 h-3 bg-emerald-400 rounded-full animate-pulse delay-500 opacity-70"></div>
+                                    <div className="absolute bottom-8 left-8 w-3 h-3 bg-amber-400 rounded-full animate-ping delay-1000 opacity-75"></div> */}
+
+                                    {/* Scan Line Effect */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-scan opacity-0 group-hover:opacity-100"></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div
-                            className="hidden sm:block absolute -right-6 bottom-12 animate-bounce duration-4000 delay-1000">
-                            <div
-                                className="bg-gradient-to-br from-[#1a365d]/95 to-[#343a40]/90 backdrop-blur-xl rounded-2xl shadow-2xl p-4 md:p-6 border border-amber-400/40 hover:border-amber-400/70 hover:shadow-orange-500/20 hover:scale-110 transition-all duration-500">
-                                <div className="flex items-center gap-4">
-                                    <div
-                                        className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-orange-500 to-amber-400 rounded-2xl flex items-center justify-center shadow-lg animate-pulse delay-500">
-                                        <Award className="w-6 h-6 md:w-7 md:h-7 text-white"/>
+                        {/* Enhanced Stats Card */}
+                        <div className="absolute -right-4 bottom-10 animate-bounce duration-6000 delay-1000">
+                            <div className="bg-gradient-to-br from-slate-900/95 via-blue-950/90 to-slate-800/95 backdrop-blur-2xl rounded-xl p-3 border border-orange-400/50 transition-all duration-700 group">
+                                <div className="flex items-center gap-2">
+                                    <div className="relative w-8 h-8 bg-gradient-to-br from-orange-500 via-amber-400 to-orange-600 rounded-xl flex items-center justify-center animate-pulse delay-500">
+                                        <Award className="w-4 h-4 text-white" />
+                                        <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-emerald-400 rounded-full animate-ping"></div>
                                     </div>
                                     <div>
-                                        <div
-                                            className="text-xl md:text-2xl font-black text-[#f8f9fa] font-[Poppins,sans-serif]">100%
-                                        </div>
-                                        <div
-                                            className="text-xs md:text-sm text-amber-400 font-medium font-[Inter,sans-serif]">Quality
-                                            Build
-                                        </div>
+                                        <div className="text-lg font-black text-white font-mono">100%</div>
+                                        <div className="text-xs text-orange-400 font-bold">Quality</div>
                                     </div>
                                 </div>
                             </div>
@@ -184,6 +203,36 @@ export default function HeroSection() {
                 </div>
             </div>
 
+            <style jsx>{`
+                @keyframes float {
+                    0%, 100% { transform: translateY(0px) rotate(0deg); }
+                    50% { transform: translateY(-20px) rotate(10deg); }
+                }
+                @keyframes shine {
+                    0% { transform: translateX(-100%); }
+                    100% { transform: translateX(200%); }
+                }
+                @keyframes scan {
+                    0% { transform: translateX(-100%); }
+                    100% { transform: translateX(100%); }
+                }
+                @keyframes shimmer {
+                    0%, 100% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                }
+                .animate-float {
+                    animation: float 4s ease-in-out infinite;
+                }
+                .animate-shine {
+                    animation: shine 2s linear infinite;
+                }
+                .animate-scan {
+                    animation: scan 3s linear infinite;
+                }
+                .animate-shimmer {
+                    animation: shimmer 3s ease-in-out infinite;
+                }
+            `}</style>
         </section>
     );
 }
