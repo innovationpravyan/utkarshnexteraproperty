@@ -1,6 +1,4 @@
-# Tell all search engines that they can crawl the entire site.
 User-agent: *
 Allow: /
 
-# Provide the location of the sitemap file.
-Sitemap: https://utkarshnextera.com/sitemap.xml
+Sitemap: https://utkarshnexteraproperty.vercel.app/sitemap.xml
