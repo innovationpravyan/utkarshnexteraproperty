@@ -1,6 +1,6 @@
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://utkarshnexteraproperty.vercel.app';
 
-export default function sitemap(): ({ url: string; lastModified: Date; changeFrequency: string; priority: number })[] {
+export default function sap(): ({ url: string; lastModified: Date; changeFrequency: string; priority: number })[] {
   return [
       {url: `${siteUrl}/`, lastModified: new Date(), changeFrequency: 'yearly', priority: 1.0},
       {url: `${siteUrl}/projects`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8},

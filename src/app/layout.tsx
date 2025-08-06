@@ -11,7 +11,7 @@ import PageLoader from '@/components/common/page-loader';
 import RunningParticles from '@/components/common/running-particles';
 import VirtualAssistantFab from '@/components/common/virtual-assistant-fab';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://utkarshnextera.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://utkarshnexteraproperty.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -63,8 +63,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Utkarsh Next Era",
-  "url": "https://utkarshnextera.com",
-  "logo": "https://utkarshnextera.com/logo/logo.svg",
+  "url": "https://utkarshnexteraproperty.vercel.app",
+  "logo": "https://utkarshnexteraproperty.vercel.app/logo/logo.svg",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-92141-43300",
