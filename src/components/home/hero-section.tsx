@@ -37,39 +37,25 @@ export default function HeroSection() {
                 ></div>
             </div>
 
-            {/* Geometric Shapes */}
-            {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute bottom-32 left-20 w-16 h-16">
-                    <Hexagon className="w-full h-full text-orange-400/30 animate-pulse duration-3000" />
-                </div>
-            </div> */}
-
-            {/* Glowing Orbs */}
-            {/* <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-orange-500/30 via-amber-400/20 to-transparent rounded-full blur-3xl animate-pulse duration-4000 hover:scale-110 transition-all duration-2000"></div>
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-orange-600/25 via-red-500/15 to-transparent rounded-full blur-3xl animate-pulse delay-2000 duration-6000"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-orange-500/5 to-transparent rounded-full animate-spin duration-[30s]"></div>
-            </div> */}
-
-            <div className="relative z-10 container mx-auto px-4 lg:py-10">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-8 text-center lg:text-left">
+            <div className="relative z-10 container mx-auto px-4 py-4 sm:py-6 lg:py-10">
+                <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 items-center min-h-screen lg:min-h-0">
+                    <div className="space-y-4 sm:space-y-6 lg:space-y-8 text-center lg:text-left">
                         {/* Premium Badge */}
-                        <div className="group hidden lg:inline-flex items-center gap-3 bg-gradient-to-r from-slate-900/80 via-blue-950/70 to-slate-900/80 backdrop-blur-2xl border-2 border-orange-400/50 rounded-full px-6 md:px-10 py-4 md:py-5 text-sm font-bold text-white shadow-2xl hover:shadow-orange-500/30 transition-all duration-700 hover:scale-105 hover:border-orange-400/80">
+                        <div className="group inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-slate-900/80 via-blue-950/70 to-slate-900/80 backdrop-blur-2xl border-2 border-orange-400/50 rounded-full px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-5 text-xs sm:text-sm font-bold text-white shadow-2xl hover:shadow-orange-500/30 transition-all duration-700 hover:scale-105 hover:border-orange-400/80">
                             <div className="relative">
-                                <Award className="w-6 h-6 text-orange-400 animate-pulse" />
-                                <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full animate-ping"></div>
+                                <Award className="w-4 h-4 sm:w-6 sm:h-6 text-orange-400 animate-pulse" />
+                                <div className="absolute -top-1 -right-1 w-2 h-2 sm:w-3 sm:h-3 bg-emerald-400 rounded-full animate-ping"></div>
                             </div>
                             <span className="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent font-black tracking-wider">
                                 LUXURY CONSTRUCTION SPECIALISTS
                             </span>
-                            <Sparkles className="w-6 h-6 text-amber-400 animate-spin duration-3000" />
+                            <Sparkles className="w-4 h-4 sm:w-6 sm:h-6 text-amber-400 animate-spin duration-3000" />
                             <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-amber-400/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
 
-                        {/* Hero Title */}
-                        <div className="space-y-4">
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight font-[Poppins,sans-serif]">
+                        {/* Hero Title - Reduced size on mobile */}
+                        <div className="space-y-2 sm:space-y-4">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight font-[Poppins,sans-serif]">
                                 <span
                                     className="block bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent animate-pulse">
                                     BUILD
@@ -82,29 +68,29 @@ export default function HeroSection() {
                                     REALITY
                                 </span>
                             </h1>
-                            <p className="text-lg md:text-xl text-[#f8f9fa]/80 max-w-2xl leading-relaxed font-light mx-auto lg:mx-0 font-[Inter,sans-serif]">
+                            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#f8f9fa]/80 max-w-2xl leading-relaxed font-light mx-auto lg:mx-0 font-[Inter,sans-serif]">
                                 Transform your vision into architectural masterpieces. Premium construction and luxury
                                 real estate solutions with unmatched craftsmanship.
                             </p>
                         </div>
 
-                        {/* Action Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+                        {/* Action Buttons - Smaller on mobile */}
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center lg:justify-start">
                             <Button
                                 size="lg"
                                 className="group relative overflow-hidden bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500
                                             hover:from-orange-700 hover:via-orange-600 hover:to-amber-600 text-white font-black
                                             ring-2 ring-orange-400/50 hover:ring-orange-400/80
-                                            transition-all duration-700 transform hover:scale-105 hover:-translate-y-2
-                                            px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl rounded-2xl"
+                                            transition-all duration-700 transform hover:scale-105 hover:-translate-y-1 sm:hover:-translate-y-2
+                                            px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-6 lg:py-8 text-sm sm:text-base md:text-lg lg:text-xl rounded-xl sm:rounded-2xl"
                                 asChild
                             >
                                 <Link href="https://wa.me/919214143300" target="_blank" rel="noopener noreferrer">
                                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent animate-shine"></div>
-                                    <Building className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-500" />
+                                    <Building className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 group-hover:rotate-12 transition-transform duration-500" />
                                     START BUILDING
-                                    <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-3 transition-transform duration-500" />
-                                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-400/20 to-amber-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                    <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 group-hover:translate-x-2 sm:group-hover:translate-x-3 transition-transform duration-500" />
+                                    <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-400/20 to-amber-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </Link>
                             </Button>
 
@@ -113,58 +99,40 @@ export default function HeroSection() {
                                 variant="outline"
                                 className="group relative overflow-hidden bg-slate-900/30 backdrop-blur-2xl hover:bg-slate-900/60
                                             border-2 border-orange-400/60 hover:border-orange-300 text-white hover:text-orange-300
-                                            shadow-2xl hover:shadow-none-500/30 transition-all duration-700 hover:scale-105 hover:-translate-y-2
-                                            px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl font-bold rounded-2xl"
+                                            shadow-2xl hover:shadow-none-500/30 transition-all duration-700 hover:scale-105 hover:-translate-y-1 sm:hover:-translate-y-2
+                                            px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-6 lg:py-8 text-sm sm:text-base md:text-lg lg:text-xl font-bold rounded-xl sm:rounded-2xl"
                                 asChild
                             >
                                 <Link href="/projects">
                                     <div className="absolute inset-0 bg-gradient-to-r from-orange-400/10 to-amber-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                    <Home className="mr-3 h-6 w-6 group-hover:rotate-12 transition-transform duration-500" />
+                                    <Home className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 group-hover:rotate-12 transition-transform duration-500" />
                                     VIEW PROJECTS
-                                    <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-3 transition-transform duration-500" />
+                                    <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 group-hover:translate-x-2 sm:group-hover:translate-x-3 transition-transform duration-500" />
                                 </Link>
                             </Button>
                         </div>
-
-                        {/* Additional CTA */}
-                        {/* <div className="pt-6">
-                            <Button
-                                variant="ghost"
-                                className="group relative text-orange-400 hover:text-amber-300 hover:bg-orange-500/20
-                                            transition-all duration-500 hover:scale-105 backdrop-blur-sm border border-orange-400/30
-                                            hover:border-orange-400/60 rounded-xl px-6 py-4"
-                                asChild
-                            >
-                                <Link href="/sell-property">
-                                    <DollarSign className="mr-2 h-5 w-5 group-hover:animate-spin" />
-                                    <span className="font-semibold">Professional Property Valuation</span>
-                                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400/5 to-amber-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
-                                </Link>
-                            </Button>
-                        </div> */}
                     </div>
 
-                    {/* Enhanced Image Section */}
-                    <div className="relative mt-12 lg:mt-0 group">
-                        {/* Background Effects */}
-                        <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-orange-500/30 to-amber-400/20 rounded-3xl rotate-12 blur-2xl animate-pulse duration-3000 group-hover:rotate-45 transition-all duration-2000"></div>
-                        <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-gradient-to-tl from-orange-400/25 to-emerald-500/15 rounded-3xl -rotate-12 blur-2xl animate-pulse duration-4000 delay-1000 group-hover:-rotate-45 transition-all duration-2000"></div>
+                    {/* Enhanced Image Section - Image at bottom on mobile */}
+                    <div className="relative group">
+                        {/* Background Effects - Smaller on mobile */}
+                        <div className="absolute -top-6 -left-6 sm:-top-8 sm:-left-8 lg:-top-12 lg:-left-12 w-20 h-20 sm:w-30 sm:h-30 lg:w-40 lg:h-40 bg-gradient-to-br from-orange-500/30 to-amber-400/20 rounded-2xl sm:rounded-3xl rotate-12 blur-xl sm:blur-2xl animate-pulse duration-3000 group-hover:rotate-45 transition-all duration-2000"></div>
+                        <div className="absolute -bottom-6 -right-6 sm:-bottom-8 sm:-right-8 lg:-bottom-12 lg:-right-12 w-24 h-24 sm:w-36 sm:h-36 lg:w-48 lg:h-48 bg-gradient-to-tl from-orange-400/25 to-emerald-500/15 rounded-2xl sm:rounded-3xl -rotate-12 blur-xl sm:blur-2xl animate-pulse duration-4000 delay-1000 group-hover:-rotate-45 transition-all duration-2000"></div>
 
-                        {/* Main Image Container */}
-                        <div className="relative aspect-[4/3] w-full max-w-2xl mx-auto">
+                        {/* Main Image Container - Responsive sizing */}
+                        <div className="relative aspect-[4/3] w-full max-w-sm sm:max-w-md lg:max-w-2xl mx-auto">
                             {/* Layered Background Elements */}
-                            <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/40 via-amber-400/30 to-orange-400/20 rounded-3xl transform rotate-2 animate-pulse duration-2000 group-hover:rotate-6 transition-all duration-1000"></div>
-                            <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/50 to-emerald-500/20 rounded-3xl transform -rotate-2 animate-pulse duration-3000 delay-500 group-hover:-rotate-6 transition-all duration-1000"></div>
+                            <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/40 via-amber-400/30 to-orange-400/20 rounded-2xl sm:rounded-3xl transform rotate-2 animate-pulse duration-2000 group-hover:rotate-6 transition-all duration-1000"></div>
+                            <div className="absolute inset-0 bg-gradient-to-bl from-slate-900/50 to-emerald-500/20 rounded-2xl sm:rounded-3xl transform -rotate-2 animate-pulse duration-3000 delay-500 group-hover:-rotate-6 transition-all duration-1000"></div>
 
-                            {/* Image Frame */}
-                            <div className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800 p-3 md:p-6 rounded-3xl transform -rotate-1 hover:rotate-0 transition-all duration-1000 border-2 border-orange-400/40 hover:border-orange-400/70 backdrop-blur-xl">
-                                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
+                            {/* Image Frame - Responsive padding */}
+                            <div className="relative bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800 p-2 sm:p-3 md:p-4 lg:p-6 rounded-2xl sm:rounded-3xl transform -rotate-1 hover:rotate-0 transition-all duration-1000 border-2 border-orange-400/40 hover:border-orange-400/70 backdrop-blur-xl">
+                                <div className="relative aspect-[4/3] w-full rounded-xl sm:rounded-2xl overflow-hidden">
                                     <Image
                                         src="/hero_bg/_hero_bg_image.png"
                                         alt="Modern construction project with premium architecture"
                                         fill
-                                        className="object-cover transition-all duration-1500 group-hover:scale-115 filter group-hover:brightness-110 group-hover:contrast-110"
+                                        className="object-cover transition-all duration-1500 group-hover:scale-110 sm:group-hover:scale-115 filter group-hover:brightness-110 group-hover:contrast-110"
                                         data-ai-hint="luxury modern house exterior"
                                         priority
                                     />
@@ -173,27 +141,22 @@ export default function HeroSection() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent group-hover:from-slate-900/40 transition-all duration-700"></div>
                                     <div className="absolute inset-0 bg-gradient-to-br from-transparent to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
 
-                                    {/* Floating Indicators */}
-                                    {/* <div className="absolute top-6 right-6 w-4 h-4 bg-orange-400 rounded-full animate-ping opacity-80 group-hover:animate-bounce"></div>
-                                    <div className="absolute top-12 right-12 w-3 h-3 bg-emerald-400 rounded-full animate-pulse delay-500 opacity-70"></div>
-                                    <div className="absolute bottom-8 left-8 w-3 h-3 bg-amber-400 rounded-full animate-ping delay-1000 opacity-75"></div> */}
-
                                     {/* Scan Line Effect */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-scan opacity-0 group-hover:opacity-100"></div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Enhanced Stats Card */}
-                        <div className="absolute -right-4 bottom-10 animate-bounce duration-6000 delay-1000">
-                            <div className="bg-gradient-to-br from-slate-900/95 via-blue-950/90 to-slate-800/95 backdrop-blur-2xl rounded-xl p-3 border border-orange-400/50 transition-all duration-700 group">
-                                <div className="flex items-center gap-2">
-                                    <div className="relative w-8 h-8 bg-gradient-to-br from-orange-500 via-amber-400 to-orange-600 rounded-xl flex items-center justify-center animate-pulse delay-500">
-                                        <Award className="w-4 h-4 text-white" />
-                                        <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-emerald-400 rounded-full animate-ping"></div>
+                        {/* Enhanced Stats Card - Responsive sizing and positioning */}
+                        <div className="absolute -right-2 sm:-right-4 bottom-4 sm:bottom-6 lg:bottom-10 animate-bounce duration-6000 delay-1000">
+                            <div className="bg-gradient-to-br from-slate-900/95 via-blue-950/90 to-slate-800/95 backdrop-blur-2xl rounded-lg sm:rounded-xl p-2 sm:p-3 border border-orange-400/50 transition-all duration-700 group">
+                                <div className="flex items-center gap-1.5 sm:gap-2">
+                                    <div className="relative w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-orange-500 via-amber-400 to-orange-600 rounded-lg sm:rounded-xl flex items-center justify-center animate-pulse delay-500">
+                                        <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                                        <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-emerald-400 rounded-full animate-ping"></div>
                                     </div>
                                     <div>
-                                        <div className="text-lg font-black text-white font-mono">100%</div>
+                                        <div className="text-base sm:text-lg font-black text-white font-mono">100%</div>
                                         <div className="text-xs text-orange-400 font-bold">Quality</div>
                                     </div>
                                 </div>
