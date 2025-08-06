@@ -18,7 +18,6 @@ const packageTypes: { id: PackageType; label: string; }[] = [
 ];
 
 export default function PackageFilters({ location, setLocation, type, setType }: PackageFiltersProps) {
-    // A simple way to show starting price, you might want a more robust way to get this
     const getStartingPrice = (pkgType: PackageType) => {
         if (pkgType === 'Homes') return 1850;
         if (pkgType === 'Luxury Homes') return 3810;
@@ -27,10 +26,10 @@ export default function PackageFilters({ location, setLocation, type, setType }:
 
     return (
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 my-8">
-            <div className="flex items-center gap-2">
-                <Label htmlFor="location-select" className="font-semibold">Location:</Label>
+            <div className="flex items-center gap-2 w-full md:w-auto">
+                <Label htmlFor="location-select" className="font-semibold whitespace-nowrap">Location:</Label>
                 <Select value={location} onValueChange={setLocation}>
-                    <SelectTrigger id="location-select" className="w-[180px]">
+                    <SelectTrigger id="location-select" className="w-full md:w-[180px]">
                         <SelectValue placeholder="Select City" />
                     </SelectTrigger>
                     <SelectContent>
@@ -41,14 +40,14 @@ export default function PackageFilters({ location, setLocation, type, setType }:
                 </Select>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4 md:mt-0">
                 <Label className="font-semibold">Type:</Label>
-                <RadioGroup value={type} onValueChange={(value) => setType(value as PackageType)} className="flex items-center gap-4">
+                <RadioGroup value={type} onValueChange={(value) => setType(value as PackageType)} className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     {packageTypes.map(pkgType => (
                         <div key={pkgType.id} className="flex items-center space-x-2">
                             <RadioGroupItem value={pkgType.id} id={pkgType.id} />
                             <Label htmlFor={pkgType.id} className="cursor-pointer">
-                                {pkgType.label} <span className="text-xs text-muted-foreground">STARTS AT ₹{getStartingPrice(pkgType.id)} PER SQFT</span>
+                                {pkgType.label} <span className="text-xs text-muted-foreground block sm:inline">STARTS AT ₹{getStartingPrice(pkgType.id)} PER SQFT</span>
                             </Label>
                         </div>
                     ))}

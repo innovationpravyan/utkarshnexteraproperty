@@ -94,5 +94,3 @@ The website is built with a strong focus on SEO to ensure maximum visibility on 
 - **Structured Data:** `Organization` schema is implemented to improve search result appearance.
 - **Image Optimization:** `next/image` is used for automatic image optimization and lazy loading.
 - **Core Web Vitals:** The application is built to be fast and responsive, targeting excellent Core Web Vitals scores.
-
-"# utkarshnexteraproperty" 

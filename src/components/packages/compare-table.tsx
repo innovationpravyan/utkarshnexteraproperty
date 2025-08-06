@@ -20,11 +20,11 @@ export default function CompareTable({ data }: CompareTableProps) {
                     <Table className="min-w-full divide-y divide-border">
                         <TableHeader className="bg-muted/50">
                             <TableRow>
-                                <TableHead className="w-1/3 px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider sticky left-0 bg-muted/50 z-10">
+                                <TableHead className="w-1/3 min-w-[200px] px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider sticky left-0 bg-muted/50 z-10">
                                     Features
                                 </TableHead>
                                 {packages.map(pkgName => (
-                                    <TableHead key={pkgName} className="w-1/6 px-6 py-3 text-center text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                                    <TableHead key={pkgName} className="w-1/6 min-w-[120px] px-6 py-3 text-center text-xs font-medium text-muted-foreground uppercase tracking-wider">
                                         {pkgName}
                                     </TableHead>
                                 ))}

@@ -19,8 +19,8 @@ export default function BlogPage() {
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Our Blog</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+          <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Our Blog</h1>
+          <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
             Stay updated with the latest insights, trends, and expert advice from our team. Discover valuable tips for construction, renovation, and design.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function BlogPage() {
                   src={post.image}
                   alt={post.title}
                   layout="fill"
-                  objectFit="contain"
+                  objectFit="cover"
                   data-ai-hint={`blog post image for ${post.title}`}
                 />
               </div>
@@ -51,7 +51,7 @@ export default function BlogPage() {
                 <CardDescription className="line-clamp-3 mb-4">
                   {post.description}
                 </CardDescription>
-                <div className="flex items-center justify-between text-sm text-muted-foreground">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-muted-foreground gap-4 sm:gap-0">
                   <div className="flex items-center gap-3">
                     <div className="flex items-center gap-1">
                       <User className="h-4 w-4" />

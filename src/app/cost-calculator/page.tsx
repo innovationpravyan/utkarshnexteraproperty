@@ -18,8 +18,8 @@ export default function CostCalculatorPage() {
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
                 <Calculator className="h-8 w-8" />
             </div>
-            <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Construction Cost Calculator</h1>
-            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+            <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Construction Cost Calculator</h1>
+            <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
                 Get a preliminary estimate for your project with our easy-to-use calculator. Simply enter your project details to get a ballpark figure. Please note that this is an approximation and a detailed quote will require a consultation with our experts to finalize the scope, materials, and finishes.
             </p>
         </div>

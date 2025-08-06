@@ -36,8 +36,8 @@ export default function SellPropertyPage() {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
                 <div>
-                    <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Sell Your Property With Us</h1>
-                    <p className="mt-4 text-lg text-muted-foreground text-balance">
+                    <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Sell Your Property With Us</h1>
+                    <p className="mt-4 text-md md:text-lg text-muted-foreground text-balance">
                         Ready to sell your property? Let our team of experts handle everything for a smooth, transparent, and profitable experience. Fill out the form, and we'll get in touch with a free valuation and a clear plan.
                     </p>
                     <div className="mt-12 space-y-8">
@@ -54,7 +54,7 @@ export default function SellPropertyPage() {
                         ))}
                     </div>
                 </div>
-                <div>
+                <div className="mt-12 lg:mt-0">
                     <SellPropertyForm />
                 </div>
             </div>

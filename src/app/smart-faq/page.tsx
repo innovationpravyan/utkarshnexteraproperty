@@ -250,14 +250,14 @@ export default function SmartFaqPage() {
     <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-orange-50/20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center mb-12">
-            <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Smart Assistant</h1>
-            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+            <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Smart Assistant</h1>
+            <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
                 Get instant answers to your questions by interacting with our guided chat. Select a topic to begin.
             </p>
         </div>
 
         <Card className="max-w-3xl mx-auto shadow-2xl">
-            <CardHeader className="flex flex-row items-center justify-between">
+            <CardHeader className="flex flex-row items-center justify-between p-4 md:p-6">
                 <div>
                     <CardTitle>Conversation</CardTitle>
                     <CardDescription>Select an option to proceed</CardDescription>
@@ -267,7 +267,7 @@ export default function SmartFaqPage() {
                     Start Over
                 </Button>
             </CardHeader>
-          <CardContent>
+          <CardContent className="p-2 md:p-4">
             <div 
               ref={chatContainerRef}
               className="h-[50vh] overflow-y-auto space-y-6 flex flex-col p-4 bg-muted/50 rounded-lg"

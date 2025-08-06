@@ -18,7 +18,7 @@ export default function PackagesClientPage() {
     <section className="bg-background">
       <div className="container mx-auto px-4 py-16 lg:py-24">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Construction Packages in {selectedCity}</h1>
+          <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Construction Packages in {selectedCity}</h1>
         </div>
         
         <PackageFilters 
@@ -28,7 +28,7 @@ export default function PackagesClientPage() {
           setType={setType} 
         />
 
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 items-stretch">
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 items-stretch">
           <AnimatePresence>
             {packages.map(pkg => (
               <PackageCard key={pkg.name} packageData={pkg} />

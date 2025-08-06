@@ -1,12 +1,13 @@
-import type {Config} from 'tailwindcss';
+import type { Config } from "tailwindcss"
 
-export default {
-  darkMode: ['class'],
+const config = {
+  darkMode: ["class"],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+	],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -79,20 +80,12 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 1s ease-in-out forwards",
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            '--tw-prose-body': theme('colors.foreground / 0.8'),
-            '--tw-prose-headings': theme('colors.foreground'),
-            '--tw-prose-lead': theme('colors.foreground'),
-            '--tw-prose-links': theme('colors.primary'),
-            '--tw-prose-bold': theme('colors.foreground'),
-            '--tw-prose-counters': theme('colors.muted-foreground'),
-            '--tw-prose-bullets': theme('colors.primary'),
-          }
-        }
-      })
     },
   },
-  plugins: [require('tailwindcss-animate'), require("@tailwindcss/typography")],
-} satisfies Config;
+  plugins: [
+    require("tailwindcss-animate"),
+    require('@tailwindcss/typography'),
+  ],
+} satisfies Config
+
+export default config

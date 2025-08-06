@@ -124,7 +124,7 @@ export default function CloserLookSection() {
                             disabled={isTransitioning}
                             className="h-12 w-12 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-xl hover:bg-orange-500 hover:text-white hover:border-orange-500 active:scale-95 hover:-rotate-12 group relative overflow-hidden"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
                             <ChevronRight className="h-5 w-5 transition-all duration-300 group-hover:translate-x-0.5 group-hover:drop-shadow-sm relative z-10" />
                         </Button>
                     </div>
@@ -181,7 +181,7 @@ export default function CloserLookSection() {
                                                     <div className="absolute top-4 right-4 z-20">
                                                         <div className={cn(
                                                             "bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-full font-semibold text-sm uppercase tracking-wide shadow-lg transition-all duration-300",
-                                                            "group-hover:scale-110 group-hover:shadow-xl group-hover:from-amber-500 group-hover:to-orange-600 animate-shimmer"
+                                                            "group-hover:scale-110 group-hover:shadow-xl group-hover:from-amber-500 group-hover:to-orange-500 animate-shimmer"
                                                         )}>
                                                             {pkg.name}
                                                         </div>
@@ -232,7 +232,7 @@ export default function CloserLookSection() {
                             {/* Enhanced active state animation */}
                             {index === selectedIndex && (
                                 <>
-                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-amber-600 opacity-100" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-500 opacity-100" />
                                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent animate-sweep" />
                                 </>
                             )}

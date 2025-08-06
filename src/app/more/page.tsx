@@ -43,8 +43,8 @@ export default function MorePage() {
     <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">More Resources</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+          <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">More Resources</h1>
+          <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
             Explore more about utkarsh next era, from our latest news to career opportunities and support channels.
           </p>
         </div>
@@ -53,13 +53,13 @@ export default function MorePage() {
           {moreLinks.map((item, index) => (
             <Link href={item.href} key={index} className="block">
               <Card className="h-full hover:bg-muted/50 transition-colors hover:shadow-lg">
-                <CardHeader className="flex-row gap-4 items-center p-4">
+                <CardHeader className="flex-col sm:flex-row gap-4 items-center p-4">
                   <div className="flex-shrink-0 bg-primary/10 text-primary p-3 rounded-full">
                     <item.icon className="h-6 w-6" />
                   </div>
-                  <div>
+                  <div className="text-center sm:text-left">
                     <CardTitle className="text-lg">{item.title}</CardTitle>
-                    <CardDescription className="text-sm">{item.description}</CardDescription>
+                    <CardDescription className="text-sm mt-1">{item.description}</CardDescription>
                   </div>
                 </CardHeader>
               </Card>

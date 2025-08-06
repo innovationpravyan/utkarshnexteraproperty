@@ -50,7 +50,7 @@ export default function FloorPlansClientPage() {
     <div className="bg-background">
         <section className="container mx-auto px-4 py-16 lg:py-24">
             <div className="text-left mb-8">
-                <h1 className="text-3xl font-headline font-bold text-foreground">Total Floor Plans - {filteredPlans.length} Designs</h1>
+                <h1 className="text-3xl font-headline font-bold text-foreground md:text-4xl">Total Floor Plans - {filteredPlans.length} Designs</h1>
             </div>
             <div className="grid lg:grid-cols-12 gap-12">
                 <aside className="lg:col-span-3">
@@ -67,7 +67,7 @@ export default function FloorPlansClientPage() {
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-3xl font-headline font-bold text-foreground md:text-4xl">Our Design Philosophy</h2>
-                  <p className="mt-4 text-lg text-muted-foreground">
+                  <p className="mt-4 text-md md:text-lg text-muted-foreground">
                     We believe a home is more than just a structure; it's a sanctuary. Our design philosophy centers around three core principles: functionality, aesthetics, and sustainability. We create spaces that are not only beautiful but also practical for everyday living, optimized for natural light and airflow, and built with materials that are kind to the environment.
                   </p>
                    <Button asChild size="lg" className="mt-6">
@@ -100,7 +100,7 @@ export default function FloorPlansClientPage() {
         <div className="container mx-auto px-4">
             <div className="text-center mb-12">
                 <h2 className="text-3xl font-headline font-bold text-foreground md:text-4xl">Frequently Asked Questions</h2>
-                <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
+                <p className="mt-2 text-md md:text-lg text-muted-foreground max-w-2xl mx-auto">
                     Have questions about our floor plans? We've got answers.
                 </p>
             </div>

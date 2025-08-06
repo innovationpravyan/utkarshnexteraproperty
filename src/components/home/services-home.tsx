@@ -109,7 +109,7 @@ export default function ServicesHome() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shine" />
                             </div>
 
-                            <CardHeader className="p-0 relative z-10">
+                            <CardHeader className="p-0 relative z-10 flex flex-col items-center justify-center">
                                 <div className={cn(
                                     "flex h-20 w-20 items-center justify-center rounded-full mb-4 transition-all duration-200 group-hover:scale-110 relative overflow-hidden",
                                     "bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30",
@@ -193,7 +193,7 @@ export default function ServicesHome() {
                             </span>
                             
                             {/* Ripple effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-amber-600/20 scale-0 group-hover:scale-100 transition-transform duration-200 rounded-lg" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-amber-500/20 scale-0 group-hover:scale-100 transition-transform duration-200 rounded-lg" />
                             
                             {/* Shine effect */}
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

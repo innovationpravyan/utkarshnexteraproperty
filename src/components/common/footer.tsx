@@ -87,7 +87,7 @@ const Footer = () => {
                         <p className="text-sm text-white/70 text-center md:text-left">
                             &copy; {new Date().getFullYear()} Utkarsh Next Era Property. All rights reserved.
                         </p>
-                        <div className="flex items-center gap-6 mt-4 md:mt-0">
+                        <div className="flex items-center gap-4 md:gap-6 mt-4 md:mt-0">
                             {FOOTER_LINKS.legal.map(link => (
                                  <Link key={link.label} href={link.href} className="text-sm text-white/70 hover:text-primary transition-colors">
                                     {link.label}

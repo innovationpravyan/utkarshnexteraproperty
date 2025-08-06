@@ -259,7 +259,7 @@ export default function HappyCustomers() {
                         >
                             {/* Active state background */}
                             {activeFilter === filter && (
-                                <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-amber-600 opacity-100" />
+                                <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-500 opacity-100" />
                             )}
                             
                             {/* Button content */}

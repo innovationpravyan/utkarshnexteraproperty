@@ -16,8 +16,8 @@ export default function ContactPage() {
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-            <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Contact Us</h1>
-            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+            <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Contact Us</h1>
+            <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
                 We'd love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
             </p>
         </div>
@@ -27,7 +27,7 @@ export default function ContactPage() {
                 <ContactForm />
             </div>
             <div className="lg:col-span-2 mt-12 lg:mt-0">
-                <div className="bg-card p-8 rounded-lg shadow-lg">
+                <div className="bg-card p-6 md:p-8 rounded-lg shadow-lg">
                     <h3 className="text-2xl font-headline font-semibold">Get in Touch</h3>
                     <p className="mt-2 text-muted-foreground text-balance">Find us at our office or drop us a line through email or phone.</p>
                     <ul className="mt-6 space-y-4">

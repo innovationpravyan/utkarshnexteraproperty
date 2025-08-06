@@ -242,7 +242,7 @@ export default function HowItWorksHome() {
                             </div>
                             
                             {/* Ripple effect */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-amber-600/20 scale-0 group-hover:scale-100 transition-transform duration-400 rounded-lg" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-amber-500/20 scale-0 group-hover:scale-100 transition-transform duration-400 rounded-lg" />
                         </a>
                     </Button>
                 </div>

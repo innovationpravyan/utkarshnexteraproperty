@@ -16,8 +16,8 @@ export default function ProjectsPage() {
     <div className="bg-background">
       <section className="container mx-auto px-4 py-16 lg:py-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Our Projects</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+          <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Our Projects</h1>
+          <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
             Explore our portfolio of successfully completed projects. We take pride in our craftsmanship and attention to detail, delivering exceptional results across various sectors.
           </p>
         </div>

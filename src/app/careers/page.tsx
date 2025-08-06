@@ -39,8 +39,8 @@ export default function CareersPage() {
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-headline font-bold text-foreground md:text-5xl">Join Our Team</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+          <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Join Our Team</h1>
+          <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
             Build your career with utkarsh next era. We're looking for talented individuals who share our passion for excellence in construction and innovation.
           </p>
         </div>
@@ -49,13 +49,13 @@ export default function CareersPage() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {benefits.map((benefit, index) => (
             <Card key={index} className="text-center p-6">
-              <CardHeader className="pb-2">
+              <CardHeader className="p-0 pb-2">
                 <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit mb-4">
                   <benefit.icon className="h-6 w-6" />
                 </div>
                 <CardTitle className="text-xl">{benefit.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-0">
                 <CardDescription>{benefit.description}</CardDescription>
               </CardContent>
             </Card>
@@ -70,7 +70,7 @@ export default function CareersPage() {
         <div className="grid lg:grid-cols-2 gap-8">
           {JobOpenings.map((job) => (
             <Card key={job.id} className="hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-4">
+              <CardHeader className="p-6 pb-4">
                 <div className="flex items-start justify-between mb-3">
                   <Badge variant="secondary" className="text-xs">
                     {job.department}
@@ -78,7 +78,7 @@ export default function CareersPage() {
                   <span className="text-sm text-muted-foreground">{job.posted}</span>
                 </div>
                 <CardTitle className="text-xl mb-2">{job.title}</CardTitle>
-                <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <MapPin className="h-4 w-4" />
                     <span>{job.location}</span>
@@ -93,7 +93,7 @@ export default function CareersPage() {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="p-6 pt-0 space-y-4">
                 <CardDescription className="leading-relaxed">
                   {job.description}
                 </CardDescription>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FeaturesHome() {
     return (
-        <section className="relative py-16 lg:py-24 bg-gradient-to-br from-slate-50 via-orange-50/30 to-amber-50/40 overflow-hidden">
+        <section className="relative py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-amber-50/40 overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 opacity-20">
                 <div className="absolute top-20 left-20 w-32 h-32 bg-orange-200 rounded-full blur-3xl animate-pulse"></div>
@@ -33,7 +33,7 @@ export default function FeaturesHome() {
                             className="group relative text-left border-0 bg-white/70 backdrop-blur-sm shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:rotate-1 overflow-hidden rounded-2xl"
                         >
                             {/* Gradient overlay on hover */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white/50 to-indigo-50/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             
                             {/* Top accent border */}
                             <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
