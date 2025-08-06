@@ -146,7 +146,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* Enhanced Image Section */}
-                    <div className="hidden lg:block relative mt-12 lg:mt-0 group">
+                    <div className="relative mt-12 lg:mt-0 group">
                         {/* Background Effects */}
                         <div className="absolute -top-12 -left-12 w-40 h-40 bg-gradient-to-br from-orange-500/30 to-amber-400/20 rounded-3xl rotate-12 blur-2xl animate-pulse duration-3000 group-hover:rotate-45 transition-all duration-2000"></div>
                         <div className="absolute -bottom-12 -right-12 w-48 h-48 bg-gradient-to-tl from-orange-400/25 to-emerald-500/15 rounded-3xl -rotate-12 blur-2xl animate-pulse duration-4000 delay-1000 group-hover:-rotate-45 transition-all duration-2000"></div>
