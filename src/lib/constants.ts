@@ -102,7 +102,7 @@ export const PROJECTS: Project[] = [
     category: "Construction",
     title: "Modern Villa in Sarjapur",
     description: "A stunning 4-bedroom villa with a focus on open-plan living and seamless indoor-outdoor integration, perfect for a modern family.",
-    imageUrl: "/project/banglore/Modern Villa in Sarjapur.jpg",
+    imageUrl: "/project/banglore/modern villa in sarjapur.jpg",
     aiHint: "modern villa exterior",
     city: "Bengaluru",
     area: "3,200 sq.ft.",
@@ -228,7 +228,7 @@ export const PROJECTS: Project[] = [
     category: "Construction",
     title: "Modern Farmhouse, Whitefield",
     description: "A spacious farmhouse blending rustic charm with modern amenities, set on a large plot in a serene part of Bengaluru.",
-    imageUrl: "/project/banglore/Construction Modern Farmhouse, Whitefield.jpg",
+    imageUrl: "/project/banglore/modern farmhouse, whitefield.jpg",
     aiHint: "modern farmhouse exterior",
     city: "Bengaluru",
     area: "3,500 sq.ft.",
@@ -269,17 +269,17 @@ export type Testimonial = {
 }
 
 export const TESTIMONIALS: Testimonial[] = [
-  { name: 'Akshat Singh', city: 'Varanasi', text: "After a Lifetime of service, we needed someone we could rely on-and we found utkarsh next era. Their team handled everything with such care.", rating: 4, image: "/happy_customers/happy_customers(3).jpg", package: "Premium Package", crn: "211861", year: 2024, projectType: "4BHK House Construction" },
-  { name: 'Lucky Pandey', city: 'Varanasi', text: "Building by the ghats was complex, but utkarsh next era handled it flawlessly. Their respect for local heritage and modern needs is commendable.", rating: 5, image: "/happy_customers/happy_customers(4).jpg", package: "Premium Package", crn: "211862", year: 2024, projectType: "Haveli Restoration" },
-  { name: 'Dr. Akhand Rai', city: 'Varanasi', text: "As a doctor, I value precision and trust. utkarsh next era delivered on both. Our clinic was completed on schedule and to the highest standards.", rating: 5, image: "/happy_customers/happy_customers(5).jpg", package: "Basic Package", crn: "211863", year: 2023, projectType: "Clinic Interior" },
+  { name: 'Akansha Singh', city: 'Varanasi', text: "After a Lifetime of service, we needed someone we could rely on-and we found utkarsh next era. Their team handled everything with such care.", rating: 4, image: "/happy_customers/happy_customers(3).jpg", package: "Premium Package", crn: "211861", year: 2024, projectType: "4BHK House Construction" },
+  { name: 'Lucky Tiwari', city: 'Varanasi', text: "Building by the ghats was complex, but utkarsh next era handled it flawlessly. Their respect for local heritage and modern needs is commendable.", rating: 5, image: "/happy_customers/happy_customers(4).jpg", package: "Premium Package", crn: "211862", year: 2024, projectType: "Haveli Restoration" },
+  { name: 'Shubham Pandey', city: 'Varanasi', text: "As a doctor, I value precision and trust. utkarsh next era delivered on both. Our clinic was completed on schedule and to the highest standards.", rating: 5, image: "/happy_customers/happy_customers(5).jpg", package: "Basic Package", crn: "211863", year: 2023, projectType: "Clinic Interior" },
 
   { name: 'Hardik Hegde', city: 'Bengaluru', text: "May 10th, the day I can never forget. The day we moved into our beautiful new home. Thank you, utkarsh next era, for making our dream a reality.", rating: 5, image: "/happy_customers/happy_customers(6).jpg", package: "Premium Package", crn: "178346", year: 2024, projectType: "3BHK Villa Construction" },
   { name: 'Sujeet Singhania', city: 'Bengaluru', text: "The transparency and professionalism shown by Utkarsh Next Era was exceptional. The app tracking feature gave us peace of mind throughout the construction process. Our dream home was completed on time and within budget.", rating: 5, image: "/happy_customers/happy_customers(7).jpg", package: "Basic Package", crn: "178347", year: 2023, projectType: "2BHK Apartment Renovation" },
-  { name: 'Akanksha Singh', city: 'Bengaluru', text: "Their interior design team is phenomenal. They understood my style perfectly and created a home that's both beautiful and functional.", rating: 4, image: "/happy_customers/happy_customers(8).jpg", package: "Basic Package", crn: "178348", year: 2024, projectType: "Full Home Interior" },
+  { name: 'Priya Gupta', city: 'Bengaluru', text: "Their interior design team is phenomenal. They understood my style perfectly and created a home that's both beautiful and functional.", rating: 4, image: "/happy_customers/happy_customers(8).jpg", package: "Basic Package", crn: "178348", year: 2024, projectType: "Full Home Interior" },
 
-  { name: 'Priya Rajan', city: 'Gurugram', text: "We looked at so many apartments, but nothing felt like home. utkarsh next era built us a home that feels like it was made just for us.", rating: 5, image: "/happy_customers/happy_customers(2).jpg", package: "Premium Package", crn: "62781", year: 2024, projectType: "5BHK Duplex Construction" },
-  { name: 'Sneha Chaturvedi', city: 'Gurugram', text: "We were impressed with the quality of materials and the speed of construction. Our dream home was ready before we expected!", rating: 5, image: "/happy_customers/happy_customers(1).jpg", package: "Basic Package", crn: "62782", year: 2023, projectType: "Independent House" },
-  { name: 'Jay Mangal', city: 'Gurugram', text: "They constructed our new co-working hub. The project was large-scale, but their team managed it with efficiency and expertise.", rating: 5, image: "/happy_customers/happy_customers(9).jpg", package: "Premium Package", crn: "62783", year: 2022, projectType: "Commercial Space" },
+  { name: 'Dr. Akhand Rai', city: 'Gurugram', text: "We looked at so many apartments, but nothing felt like home. utkarsh next era built us a home that feels like it was made just for us.", rating: 5, image: "/happy_customers/happy_customers(2).jpg", package: "Premium Package", crn: "62781", year: 2024, projectType: "5BHK Duplex Construction" },
+  { name: 'Virendra Patil', city: 'Gurugram', text: "We were impressed with the quality of materials and the speed of construction. Our dream home was ready before we expected!", rating: 5, image: "/happy_customers/happy_customers(1).jpg", package: "Basic Package", crn: "62782", year: 2023, projectType: "Independent House" },
+  { name: 'Jaya Chaturvedi', city: 'Gurugram', text: "They constructed our new co-working hub. The project was large-scale, but their team managed it with efficiency and expertise.", rating: 5, image: "/happy_customers/happy_customers(9).jpg", package: "Premium Package", crn: "62783", year: 2022, projectType: "Commercial Space" },
 ];
 
 export const FOOTER_LINKS = {
@@ -611,13 +611,13 @@ export const CLOSER_LOOK_DATA: CloserLookPackage[] = [
   },
   {
     name: "Classic",
-    mainImage: "/closer_look/Enhanced%20for%20Modern%20.png",
+    mainImage: "/closer_look/classic package.jpg",
     title: "Enhanced for Modern Living",
     description: "The Classic package elevates your home with superior materials and refined finishes, blending durability with style."
   },
   {
     name: "Premium",
-    mainImage: "/closer_look/Elegance%20in%20Every%20De.png",
+    mainImage: "/closer_look/premium package.jpg",
     title: "Elegance in Every Detail",
     description: "Experience superior craftsmanship with our Premium package, featuring top-tier brands and future-ready amenities."
   },
