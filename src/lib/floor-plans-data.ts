@@ -19,7 +19,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 1,
         title: "Modern Apartment Complex",
-        imageUrl: "https://placehold.co/400x400.png",
+        imageUrl: "/floor/1.jpg",
         aiHint: "3d apartment building",
         likes: 40,
         type: "Residential",
@@ -33,7 +33,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 2,
         title: "Compact Urban House",
-        imageUrl: "https://placehold.co/400x400.png",
+        imageUrl: "/floor/2.jpg",
         aiHint: "3d small house",
         likes: 32,
         type: "Residential",
@@ -47,7 +47,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 3,
         title: "Spacious Duplex",
-        imageUrl: "https://placehold.co/400x400.png",
+        imageUrl: "/floor/3.jpg",
         aiHint: "3d duplex house",
         likes: 55,
         type: "Residential",
@@ -61,7 +61,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 4,
         title: "Suburban Villa",
-        imageUrl: "https://placehold.co/400x400.png",
+        imageUrl: "/floor/4.jpg",
         aiHint: "3d suburban villa",
         likes: 78,
         type: "Residential",
@@ -75,7 +75,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 5,
         title: "Small Office Building",
-        imageUrl: "https://placehold.co/400x400.png",
+        imageUrl: "/floor/5.jpg",
         aiHint: "3d office building",
         likes: 21,
         type: "Commercial",
@@ -89,7 +89,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 6,
         title: "Luxury Penthouse",
-        imageUrl: "https://placehold.co/400x400.png",
+        imageUrl: "/floor/6.jpg",
         aiHint: "3d luxury penthouse",
         likes: 99,
         type: "Residential",
