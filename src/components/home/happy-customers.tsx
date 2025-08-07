@@ -286,41 +286,6 @@ export default function HappyCustomers() {
                         />
                     ))}
                 </div>
-
-                {/* Enhanced CTA */}
-                <div className={cn(
-                    "text-center transition-all duration-300 delay-700",
-                    isInView ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-8"
-                )}>
-                    <Button 
-                        variant="outline"
-                        size="lg"
-                        className={cn(
-                            "group relative overflow-hidden px-8 py-6 text-lg font-semibold transition-all duration-300",
-                            "hover:scale-105 hover:shadow-xl hover:shadow-orange-500/25",
-                            "border-2 border-orange-500 text-orange-600 dark:text-orange-400",
-                            "hover:border-orange-600 hover:text-white hover:bg-orange-500",
-                            "active:scale-95"
-                        )}
-                    >
-                        {/* Button background animation */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        
-                        {/* Button content */}
-                        <span className="relative z-10 flex items-center gap-3">
-                            <Users className="h-5 w-5" />
-                            View More Reviews
-                        </span>
-                        
-                        {/* Shine effect */}
-                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shine" />
-                        </div>
-                        
-                        {/* Ripple effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-amber-600/20 scale-0 group-hover:scale-100 transition-transform duration-400 rounded-lg" />
-                    </Button>
-                </div>
             </div>
 
             <style jsx>{`

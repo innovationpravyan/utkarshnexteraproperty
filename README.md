@@ -88,7 +88,7 @@ The project follows a standard Next.js App Router structure:
 ## 🌐 SEO & Optimization
 
 The website is built with a strong focus on SEO to ensure maximum visibility on search engines. Key optimizations include:
-- **Dynamic Sitemap:** Automatically generated via `sitemap.ts`.
+- **Dynamic Sitemap:** Automatically generated via `sitemap.xml/route.ts`.
 - **Robots.txt:** Optimized for crawlers.
 - **Metadata:** Unique and descriptive titles and meta descriptions for all pages.
 - **Structured Data:** `Organization` schema is implemented to improve search result appearance.
