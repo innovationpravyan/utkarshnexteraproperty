@@ -411,7 +411,7 @@ const cityPackagePrices: Record<string, Record<PackageType, Record<Package['name
     "Luxury Homes": { Luxe: 3910, Elegance: 4500, Opulence: 5200, Imperial: 6000, Basic: 0, Classic: 0, Premium: 0, Royale: 0 }
   },
   "Varanasi": {
-    "Homes": { Basic: 1850, Classic: 1980, Premium: 2250, Royale: 2485, Luxe: 0, Elegance: 0, Opulence: 0, Imperial: 0 },
+    "Homes": { Basic: 1700, Classic: 1880, Premium: 2250, Royale: 2485, Luxe: 0, Elegance: 0, Opulence: 0, Imperial: 0 },
     "Luxury Homes": { Luxe: 3810, Elegance: 4400, Opulence: 5100, Imperial: 5900, Basic: 0, Classic: 0, Premium: 0, Royale: 0 }
   },
   "Gurugram": {
