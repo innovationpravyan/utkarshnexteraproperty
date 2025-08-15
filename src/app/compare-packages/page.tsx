@@ -3,7 +3,7 @@ import { packageComparisonData } from "@/lib/constants";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Compare Construction Packages & Features',
+  title: 'Compare Construction Packages & Features | PropertyPro',
   description: 'Side-by-side comparison of our construction packages. Find the perfect fit for your budget and needs, from Basic to Royale, with detailed feature breakdowns.',
   alternates: {
     canonical: '/compare-packages',

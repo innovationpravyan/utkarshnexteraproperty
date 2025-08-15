@@ -1,5 +1,3 @@
-// The floor plan data now includes an 'area' field to support the new filtering functionality.
-
 export type FloorPlan = {
     id: number;
     title: string;
@@ -19,7 +17,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 1,
         title: "Modern Apartment Complex",
-        imageUrl: "/floor/1.jpg",
+        imageUrl: "/floor/2.jpg",
         aiHint: "3d apartment building",
         likes: 40,
         type: "Residential",
@@ -33,7 +31,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 2,
         title: "Compact Urban House",
-        imageUrl: "/floor/2.jpg",
+        imageUrl: "/floor/3.jpg",
         aiHint: "3d small house",
         likes: 32,
         type: "Residential",
@@ -47,7 +45,7 @@ export const floorPlansData: FloorPlan[] = [
     {
         id: 3,
         title: "Spacious Duplex",
-        imageUrl: "/floor/3.jpg",
+        imageUrl: "/floor/1.jpg",
         aiHint: "3d duplex house",
         likes: 55,
         type: "Residential",

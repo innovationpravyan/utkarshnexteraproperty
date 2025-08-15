@@ -1,11 +1,11 @@
-import { Newspaper, HelpCircle, Briefcase, Info } from 'lucide-react';
+import { Newspaper, HelpCircle, Briefcase, Info, Compass } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'More Resources | Utkarsh Next Era',
-  description: 'Explore more about Utkarsh Next Era. Find our blog, career opportunities, company information, and support channels all in one place.',
+  title: 'More Resources | PropertyPro',
+  description: 'Explore more about PropertyPro. Find our blog, career opportunities, company information, and support channels all in one place.',
   alternates: {
     canonical: '/more',
   },
@@ -35,6 +35,12 @@ const moreLinks = [
     title: "Help & Support",
     description: "Find answers to your questions and get support from our dedicated team.",
     href: "/smart-faq"
+  },
+  {
+    icon: Compass,
+    title: "How It Works",
+    description: "Learn about our streamlined process from consultation to handover.",
+    href: "/how-it-works"
   }
 ];
 
@@ -45,7 +51,7 @@ export default function MorePage() {
         <div className="text-center mb-12">
           <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">More Resources</h1>
           <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
-            Explore more about utkarsh next era, from our latest news to career opportunities and support channels.
+            Explore more about PropertyPro, from our latest news to career opportunities and support channels.
           </p>
         </div>
 

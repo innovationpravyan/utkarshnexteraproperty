@@ -1,4 +1,10 @@
+# Allow all friendly crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://utkarshnexteraproperty.vercel.app/sitemap.xml
+# Disallow specific paths if needed, for example:
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.propertypro.in/sitemap.xml

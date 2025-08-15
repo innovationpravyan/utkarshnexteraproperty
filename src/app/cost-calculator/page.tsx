@@ -3,8 +3,8 @@ import { Calculator } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Construction Cost Calculator India',
-  description: "Estimate the cost of your construction project in Bengaluru, Varanasi, or Gurugram with our easy-to-use calculator. Get a free quote for your dream home.",
+  title: 'Construction Cost Calculator | PropertyPro',
+  description: "Estimate the cost of your construction project with our easy-to-use calculator. Get a free, instant quote for your dream home.",
   alternates: {
     canonical: '/cost-calculator',
   },

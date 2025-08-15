@@ -7,8 +7,8 @@ import type { Metadata } from 'next';
 import { BlogPosts } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Construction & Design Blog | Insights & Trends',
-  description: 'Stay updated with the latest construction insights, design trends, and news from Utkarsh Next Era. Read our expert articles on renovation and property.',
+  title: 'Construction & Design Blog | Insights & Trends | PropertyPro',
+  description: 'Stay updated with the latest construction insights, design trends, and news from PropertyPro. Read our expert articles on renovation and property.',
   alternates: {
     canonical: '/blog',
   },

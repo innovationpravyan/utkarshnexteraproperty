@@ -9,8 +9,8 @@ import type { Metadata } from 'next';
 import { JobOpenings } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Careers in Construction | Join Our Team',
-  description: 'Explore exciting career opportunities in construction, engineering, and project management at Utkarsh Next Era. Build your future with a leading company.',
+  title: 'Careers in Construction | Join Our Team | PropertyPro',
+  description: 'Explore exciting career opportunities in construction, engineering, and project management at PropertyPro. Build your future with a leading company.',
   alternates: {
     canonical: '/careers',
   },
@@ -41,7 +41,7 @@ export default function CareersPage() {
         <div className="text-center mb-12">
           <h1 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Join Our Team</h1>
           <p className="mt-4 text-md md:text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
-            Build your career with utkarsh next era. We're looking for talented individuals who share our passion for excellence in construction and innovation.
+            Build your career with PropertyPro. We're looking for talented individuals who share our passion for excellence in construction and innovation.
           </p>
         </div>
 

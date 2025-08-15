@@ -4,8 +4,8 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Utkarsh Next Era',
-  description: "Get in touch with Utkarsh Next Era for your construction needs. Call us, email us, or visit our office. We're here to help build your dream project.",
+  title: 'Contact Us | PropertyPro',
+  description: "Get in touch with PropertyPro for your construction needs. Call us, email us, or visit our office. We're here to help build your dream project.",
   alternates: {
     canonical: '/contact',
   },
@@ -42,7 +42,7 @@ export default function ContactPage() {
                             <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                             <div>
                                 <h4 className="font-semibold">Email Us</h4>
-                                <p className="text-muted-foreground">info@utkarshnextera.com</p>
+                                <p className="text-muted-foreground">info@propertypro.in</p>
                             </div>
                         </li>
                         <li className="flex items-start gap-3">
@@ -56,7 +56,7 @@ export default function ContactPage() {
                     <div className="mt-8 relative h-64 w-full rounded-lg overflow-hidden">
                         <Image
                             src="/contact_us/generate a contact u.png"
-                            alt="Map to utkarsh next era office"
+                            alt="Map to PropertyPro office"
                             layout="fill"
                             objectFit="cover"
                             data-ai-hint="office building map"

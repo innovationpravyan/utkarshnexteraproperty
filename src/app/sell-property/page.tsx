@@ -4,8 +4,8 @@ import HappyCustomers from "@/components/home/happy-customers";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sell Your Property Fast | Free Valuation',
-  description: 'Sell your property with Utkarsh Next Era for a hassle-free and profitable experience. Get a free valuation and access our network of vetted buyers in India.',
+  title: 'Sell Your Property Fast | Free Valuation | PropertyPro',
+  description: 'Sell your property with PropertyPro for a hassle-free and profitable experience. Get a free valuation and access our network of vetted buyers.',
   alternates: {
     canonical: '/sell-property',
   },

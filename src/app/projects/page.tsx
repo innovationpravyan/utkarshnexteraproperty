@@ -4,8 +4,8 @@ import HappyCustomers from '@/components/home/happy-customers';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Construction Projects Portfolio',
-  description: 'Explore our portfolio of completed construction, renovation, and interior design projects in Bengaluru, Varanasi, and Gurugram. See our quality and craftsmanship.',
+  title: 'Our Construction Projects Portfolio | PropertyPro',
+  description: 'Explore our portfolio of completed construction, renovation, and interior design projects. See our quality craftsmanship and attention to detail.',
   alternates: {
     canonical: '/projects',
   },
